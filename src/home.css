@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.portfolio-container {
+  color: white;
+  background-color: #343a40;
+  padding: 20px;
+}
+
+.portfolio-container p {
+  margin-top: 80px;
+  font-size: 1.2em;
+}
+
+.portfolio-container h1 {
+  margin: 0;
+}
+
+.portfolio-header {
+  text-align: start;
+}
+
+.highlight {
+  color: red;
+}
+
+.word-container {
+  display: flex;
+  position: relative;
+  height: 60px; /* Ensure a fixed height for the animated text area */
+  align-items: center;
+}
+
+.static-text {
+  position: relative;
+}
+
+.word {
+  margin: auto;
+  color: white;
+  font: 700 normal 2.5em 'tahoma';
+  text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+  white-space: nowrap;
+}
+
+.description {
+  margin-top: 20px;
+}
+
+.shadow-box {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-color: rgba(47, 52, 56, 0.3);
+  width: 550px;
+  height: 560px;
+  position: absolute;
+  z-index: 100;
+  margin-top: 100px;
+}
+
+.image {
+  z-index: 300;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 20px;
+  animation: slideInRight 2.5s ease-in-out forwards;
+}
+
+.social-meadia {
+  width: 60px;
+  height: 60px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animated-row {
+  animation: slideUp 1.5s ease-in-out forwards;
+}

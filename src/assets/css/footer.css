@@ -1,0 +1,27 @@
+/* Assuming this is in your custom CSS file, e.g., Footer.css */
+.footer-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-nav h2, .footer-nav .nav-link {
+    margin: 0;
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+  }
+  
